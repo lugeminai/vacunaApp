@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "idlocal": 1,
+            "nombre": "Local 1",
+            "direccion": "Direccion 1",
+            "ubigeo": "150201",
+            "fecha": "11/11/2021"
+        },
+        {
+            "idlocal": 2,
+            "nombre": "Local 2",
+            "direccion": "Direccion 2",
+            "ubigeo": "150201",
+            "fecha": "11/11/2021"
+        },
+        {
+            "idlocal": 3,
+            "nombre": "Local 3",
+            "direccion": "Direccion 3",
+            "ubigeo": "150203",
+            "fecha": "11/11/2021"
+        },
+        {
+            "idlocal": 4,
+            "nombre": "Local 4",
+            "direccion": "Direccion 4",
+            "ubigeo": "150205",
+            "fecha": "11/11/2021"
+        }
+    ]
+}
