@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-consultalocal',
@@ -6,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./consultalocal.component.scss']
 })
 export class ConsultalocalComponent implements OnInit {
+  consultarLocalForm = new FormGroup ({
+    consultado: new FormGroup({
+      dni :new FormControl('')
+    })
+  });
+
 
   constructor() { }
 
