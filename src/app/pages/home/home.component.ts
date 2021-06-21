@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -10,12 +10,12 @@ export class HomeComponent implements OnInit {
  
 personaForm = this.personaFB.group({
   persona: this.personaFB.group({
-    dni: [''],
-    nombre: [''],
-    apellido: [''],
-    fechaNac: [''],
-    celular: [''],
-    ubigeo: ['']
+    dni: ['', Validators.required],
+    nombre: ['', Validators.required],
+    apellido: ['', Validators.required],
+    fechaNac: ['', Validators.required],
+    celular: ['', Validators.required],
+    ubigeo: ['', Validators.required]
   })
 });
 
