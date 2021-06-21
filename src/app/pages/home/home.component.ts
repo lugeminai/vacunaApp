@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -8,20 +8,18 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
  
- registroForm = new FormGroup({
-   registrado: new FormGroup({
-    dni :new FormControl(''),
-    nombre: new FormControl(''),
-    apellido: new FormControl(''),
-    fechaNac: new FormControl (''),
-    celular: new FormControl (''),
-    ubigeo: new FormControl ('')
-   })
-    
- });
+personaForm = this.personaFB.group({
+  persona: this.personaFB.group({
+    dni: [''],
+    nombre: [''],
+    apellido: [''],
+    fechaNac: [''],
+    celular: [''],
+    ubigeo: ['']
+  })
+});
 
-
-  constructor() { }
+  constructor(private personaFB: FormBuilder) { }
 
   ngOnInit(): void {
   }
