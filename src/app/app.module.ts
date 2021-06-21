@@ -9,6 +9,7 @@ import { ConsultapadronComponent } from './pages/consultapadron/consultapadron.c
 import { ConsultalocalComponent } from './pages/consultalocal/consultalocal.component';
 import { LocalComponent } from './pages/local/local.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PadronvacunacionComponent } from './pages/consultapadron/padronvacunacion/padronvacunacion.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     ConsultapadronComponent,
     ConsultalocalComponent,
-    LocalComponent
+    LocalComponent,
+    PadronvacunacionComponent
   ],
   imports: [
     BrowserModule,
