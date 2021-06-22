@@ -21,6 +21,10 @@ personaForm = this.personaFB.group({
 
   constructor(private personaFB: FormBuilder) { }
 
+  onSubmit(){
+    console.log(this.personaForm.value)
+  }
+
   ngOnInit(): void {
   }
 
