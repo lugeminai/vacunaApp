@@ -74,35 +74,36 @@
                 
                 <div class="form-group">
                     <div class="text-center">
-                    <button href="#confirmar" data-toggle="modal" type="success" class="btn btn-primary right" style="background-color: rgba(16, 39, 247, 0.877);" >Registrarse</button>
+                    <button (click)="onSubmit()" href="#confirmar" data-toggle="modal" type="success" class="btn btn-primary right" style="background-color: rgba(16, 39, 247, 0.877);" >Registrarse</button>
                     </div>
                 </div>
+                <div id="confirmar" class="modal fade">
+                    <div class="modal-dialog modal-confirm">
+                        <div class="modal-content">
+                            <div class="modal-header flex-column">
+                                <div class="icon-box">
+                                    <i class="material-icons">Aceptación de los términos:</i>
+                                </div>						
+                                <h4 class="modal-title w-100">¡IMPORTANTE!</h4>	
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Al enviar esta informacion el usuario se compromete a cumplir con los lineamientos del Programa Nacional de Vacunación Covid-19</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">NO</button>
+                                <button type="button" onclick="window.location.href='/gestionar'" class="btn btn-danger">SI</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
             </form>
             </div>
             
         </div> 
     </div>
-    <div id="confirmar" class="modal fade">
-        <div class="modal-dialog modal-confirm">
-            <div class="modal-content">
-                <div class="modal-header flex-column">
-                    <div class="icon-box">
-                        <i class="material-icons">Aceptación de los términos:</i>
-                    </div>						
-                    <h4 class="modal-title w-100">¡IMPORTANTE!</h4>	
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <p>Al enviar esta informacion el usuario se compromete a cumplir con los lineamientos del Programa Nacional de Vacunación Covid-19</p>
-                </div>
-                <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">NO</button>
-                    <button type="button" onclick="window.location.href='/gestionar'" class="btn btn-danger">SI</button>
-                </div>
-            </div>
-        </div>
-    </div> 
-    <div>
+        <div>
     </div>
 </section>
 
