@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ConsultalocalComponent } from './pages/consultalocal/consultalocal.component';
 import { ConsultapadronComponent } from './pages/consultapadron/consultapadron.component';
+import { PadronvacunacionComponent } from './pages/consultapadron/padronvacunacion/padronvacunacion.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LocalComponent } from './pages/local/local.component';
 
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'consultapadron', component: ConsultapadronComponent},
   {path: 'home', component: HomeComponent},
   {path: 'local', component: LocalComponent},
+  {path: 'padronvacunacion', component: PadronvacunacionComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 
