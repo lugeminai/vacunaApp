@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: 'consultapadron', component: ConsultapadronComponent},
   {path: 'home', component: HomeComponent},
   {path: 'local', component: LocalComponent},
-  {path: 'padronvacunacion', component: PadronvacunacionComponent},
+  {path: 'consultapadron/padronvacunacion', component: PadronvacunacionComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 
