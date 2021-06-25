@@ -11,7 +11,7 @@ const routes: Routes = [
   {path:'consultalocal', component: ConsultalocalComponent},
   {path: 'consultapadron', component: ConsultapadronComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'local', component: LocalComponent},
+  {path: 'consultalocal/local', component: LocalComponent},
   {path: 'consultapadron/padronvacunacion', component: PadronvacunacionComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
