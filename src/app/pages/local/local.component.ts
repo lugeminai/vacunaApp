@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LocalService } from 'src/app/services/local.service';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-local',
@@ -9,7 +10,7 @@ import { LocalService } from 'src/app/services/local.service';
 export class LocalComponent implements OnInit {
 
   locals=[];
-  constructor(private readonly localService: LocalService) { }
+  constructor(private readonly localService: LocalService) {}
 
   getLocals(){
     this.localService.getLocal().subscribe((rest: any)=> {
@@ -21,5 +22,6 @@ export class LocalComponent implements OnInit {
   ngOnInit(): void {
     this.getLocals();
   }
-
 }
+
+
